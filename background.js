@@ -1,0 +1,1 @@
+document.querySelector('body').classList.add('crunchyroll-theater-mode');

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "CrunchyRoll Theater Mode",
+  "version": "0.0.1",
+  "description": "A Chrome Extension aimed at modifying and improving on Allo for Web's user-interface.",
+  "icons": { 
+    "16":"images/icon-32.png", 
+    "48":"images/icon-64.png", 
+    "128":"images/icon-128.png" },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [ "https://www.crunchyroll.com/*"],
+  "content_scripts": [{
+    "matches": ["https://www.crunchyroll.com/*"],
+    "css": ["style.css"],
+    "js": ["background.js"],
+    "run_at": "document_idle"
+  }]
+
+}
