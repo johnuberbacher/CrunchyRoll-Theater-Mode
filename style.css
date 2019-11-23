@@ -1,16 +1,79 @@
 /* Global Override */
+header+a {
+	display: none!important;
+}
+body.crunchyroll-theater-mode #main_content textarea,
+body.crunchyroll-theater-mode .collection-carousel {
+	width: 100%!important;
+}
 body.crunchyroll-theater-mode .message_box {
 	display: none!important;
 }
- body.crunchyroll-theater-mode #main_content {
+body.crunchyroll-theater-mode #main_content {
 	width: 100%!important; 
 	float: none!important; 
-}
-body.crunchyroll-theater-mode #main_content .player-container-16-9 {
-	width: 960px!important;
-    height: 540px!important;
 }
 body.crunchyroll-theater-mode #sidebar {
 	margin-top: 2rem!important;
     width: 100%!important;
 }
+body.crunchyroll-theater-mode .showmedia-trailer-notice {
+	width: calc(100% - 24px)!important;
+}
+/* Container & Video */
+body.crunchyroll-theater-mode #template_container.template-container {
+    width: 100%!important;
+}
+
+@media (min-width:576px) {
+    body.crunchyroll-theater-mode #template_container.template-container {
+        max-width: 540px!important;
+    }
+	body.crunchyroll-theater-mode #main_content #showmedia_video_box { 
+		width: 540px!important; 
+		height: 304px!important;
+	}
+}
+
+@media (min-width:768px) {
+    body.crunchyroll-theater-mode #template_container.template-container {
+        max-width: 720px!important;
+    }
+	body.crunchyroll-theater-mode #main_content #showmedia_video_box { 
+		width: 720px!important; 
+		height: 405px!important;
+	}
+}
+
+@media (min-width:992px) {
+    body.crunchyroll-theater-mode #template_container.template-container {
+        max-width: 960px!important;
+    }
+	body.crunchyroll-theater-mode #main_content #showmedia_video_box { 
+		width: 960px!important; 
+		height: 540px!important;
+	}
+}
+
+@media (min-width:1200px) {
+    body.crunchyroll-theater-mode #template_container.template-container {
+        max-width: 1140px!important;
+    }
+	body.crunchyroll-theater-mode #main_content #showmedia_video_box { 
+		width: 1140px!important; 
+		height: 641px!important;
+	}
+}
+
+@media (min-width:1400px) {
+    body.crunchyroll-theater-mode #template_container.template-container {
+        max-width: 1340px!important;
+    }
+	body.crunchyroll-theater-mode #main_content #showmedia_video_box { 
+		width: 1340px!important; 
+		height: 754px!important;
+	}
+}
+
+
+
