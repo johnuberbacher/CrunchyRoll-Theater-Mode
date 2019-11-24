@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "CrunchyRoll Theater Mode",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A Chrome Extension that adds a Theater mode-like experience to CrunchyRoll's Web Interface",
   "icons": { 
     "16":"images/icon-32.png", 
